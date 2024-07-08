@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.barra-lateral {
+    width: 200px;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra-lateral img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.barra-lateral ul li {
+    margin: 20px 0;
+}
+
+.barra-lateral ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+.barra-lateral ul li a:hover {
+    background-color: #333;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.user-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nome-do-usuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.user-name {
+    font-size: 18px;
+}
+
+.blocotxt {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barratxt {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.barratxt input {
+    width: 96%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+}
+
+.note-block {
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    color: #fff;
+    resize: vertical;
+}
+
+.botao-envio {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.botao-envio:hover {
+    background-color: #555;
+}
